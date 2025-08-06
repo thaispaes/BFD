@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(236, 233, 233);
+    padding: 15px;
+    color: #181818;
+}
+
+header, section, article {
+    background-color: white;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+/* Header */
+
+header {
+   display: grid;
+   grid-template-columns: 150px 500px ;
+}
+
+img {
+    width: 110px;
+
+}
+
+header h1 {
+    font-size: 2.0em;
+    margin-bottom: 10px;
+    color: rgb(8, 107, 169);
+}
+
+header p {
+    font-size: 1.0em;
+    color: rgb(1, 12, 19);
+    padding: 2px;
+}
+
+/* Main */
+
+section h2, article h2 {
+    font-size: 1.5em;
+    margin: 6px 10px;
+    color: rgb(8, 107, 169);
+}
+
+#cliente p {
+    color: rgb(1, 12, 19);
+    margin-bottom: 6px;
+    margin-left: 10px;
+}
+
+#compra p{
+    color: rgb(1, 12, 19);
+    margin-bottom: 6px;
+    margin-left: 10px;
+}
+
+
+
+hr {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border-top: 2px solid rgb(8, 107, 169);
+    
+}
+
+/* Tabela */
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 1.0em;
+}
+
+table th {
+    padding: 10px 8px;
+    text-align: left;
+    border: 2px solid white;
+    background-color: rgb(8, 107, 169);
+    color: white;
+}
+
+
+table td{
+    padding: 10px 8px;
+    text-align: left;
+    color: rgb(1, 12, 19);
+}
+
+table tfoot td{
+    background-color: rgb(8, 107, 169);
+    color: white;
+    font-weight: bold;
+
+}
+
+/* Footer */
+
+#imposto p {
+    color: rgb(1, 12, 19);
+    margin-bottom: 6px;
+    margin-left: 12px;
+    padding: 2px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    color: rgb(1, 12, 19);
+    padding: 4px;
+}
