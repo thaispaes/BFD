@@ -4,57 +4,103 @@
     <meta charset="UTF-8" />
     <title>Formulário – Atividade 3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-   </head>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
   <body>
     <form action="#" method="POST" novalidate>
       <h1>Cadastro de geração de testes</h1>
 
       <fieldset>
         <legend>Dados do solicitante</legend>
-
-        <div>
-          <label>Nome do solicitante</label>
-          <input />
-          <br>
-          <label>Email do solicitante</label>
-          <input />
-          <br>
-          <label>Projeto que trabalha</label>
-          <input />
-          <br>
-          <label>Demanda solicitante</label>
-          <input />
-          <br>
-          <label>Data da solicitação</label>
-          <input />
+        <div class="dados_solicitante">
+          <label class="label_solicitante" for="name">Nome do solicitante</label>
+          <input
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="Digite seu nome e sobrenome"
+            size="30"
+            required
+          />
+          <br />
+          <label class="label_solicitante" for="email">Email do solicitante</label>
+          <input
+            type="email"
+            id="email"
+            name="user_email"
+            placeholder="Informe seu email"
+            required
+          />
+          <br />
+          <label class="label_solicitante" for="project">Projeto que trabalha</label>
+          <input
+            type="text"
+            id="project"
+            name="project_name"
+            placeholder="Informe o seu projeto"
+            required
+          />
+          <br />
+          <label class="label_solicitante" for="demanda">Demanda solicitante</label>
+          <input
+            type="text"
+            id="demanda"
+            name="demanda_name"
+            class="input_solicitante"
+            placeholder="Informe o nome da sua demanda"
+          />
+          <br />
+          <label class="label_solicitante date_picker" for="date_required">Data da solicitação</label>
+          <input
+            type="date"
+            id="date_required"
+            name="date_required"
+            max="2025-08-18"
+            value="2025-08-18"
+            readonly
+          />
         </div>
       </fieldset>
 
-      <br/>
+      <br />
 
       <fieldset>
         <legend>Dados para geração</legend>
+        <div class="group-option">
+          <label class="option-item" for="TI">Ambiente de TI</label>
+          <input type="radio" id="TI" name="ambiente_ti" value="TI" checked />
 
-        <div>
-           <label>Ambiente</label>
-          <input />
-          <br>
-           <label>Data para entrega</label>
-          <input />
-          <br>
-           <label>Quantidade de geração</label>
-          <input />
-          <br>
-           <label>Arquivo de endereços validos</label>
-          <input />
+          <label class="option-item" for="TRG">Ambiente de TRG</label>
+          <input type="radio" id="TRG" name="ambiente_trg" value="TRG" />
+
+          <label class="option-item" for="HML">Ambiente de HML</label>
+          <input type="radio" id="HML" name="ambiente_hml" value="HML" />
+        </div>
+
+        <br />
+        <label for="date_send" class="date_picker">Data para entrega</label>
+        <input type="date" id="date_send" name="date" required />
+        <br />
+        <label for="qtd_range">Quantidade de geração</label>
+        <input
+          type="range"
+          id="qtd_range"
+          name="range"
+          min="0"
+          max="10"
+          value="0"
+        />
+        <br />
+        <label class="file_send_input" for="address_file">Arquivo de endereços validos</label>
+        <input type="file" name="file" id="address_file" />
       </fieldset>
 
       <label>Observações para a geração</label>
       <textarea></textarea>
-      <br>
+      <br />
 
-      <button>Enviar</button>
-       <button>Redefinir</button>
+      <button class="btn" type="submit" value="Submit form">Enviar</button>
+      <button class="btn" type="reset" value="Reset form">Redefinir</button>
     </form>
   </body>
 </html>
