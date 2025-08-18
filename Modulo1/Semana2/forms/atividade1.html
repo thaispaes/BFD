@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Explorando Tipos de Inputs - Atividade 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+
+  <h1>Explorando Tipos de Inputs</h1>
+
+  <form action="#" method="POST">
+
+    <label for="nome">Nome Completo:</label>
+    <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+
+    <br>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" placeholder="exemplo@dominio.com" required>
+
+    <br>
+
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" placeholder="Digite sua idade" min="1" max="10" required>
+
+    <fieldset>
+      <legend>Gênero:</legend>
+      <div class="option-group">
+        <label class="option-item" for="masculino">
+          <input type="radio" id="masculino" value="masculino">
+          Masculino
+        </label>
+
+        <br>
+
+        <label class="option-item" for="feminino">
+          <input type="radio" id="feminino" value="feminino">
+          Feminino
+        </label>
+
+        <label class="option-item" for="nao-declarar">
+          <input type="radio" id="nao-declarar" value="nao-declarar">
+          Prefiro não dizer
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Quais hobbies você pratica?</legend>
+      <div class="option-group">
+        <label class="option-item" for="leitura">
+          <input type="checkbox" id="leitura" value="leitura">
+          Leitura
+        </label>
+        
+        <label class="option-item" for="musica">
+          <input type="checkbox" id="musica" value="musica">
+          Música
+        </label>
+
+        <label class="option-item" for="esportes">
+          <input type="checkbox" id="esportes" value="esportes">
+          Esportes
+        </label>
+
+        <label class="option-item" for="tecnologia">
+          <input type="checkbox" id="tecnologia" value="tecnologia">
+          Tecnologia
+        </label>
+
+        <label class="option-item" for="outros">
+          <input type="checkbox" id="outros" value="outros">
+          Outros
+        </label>
+      </div>
+    </fieldset>
+
+    <label for="comentarios">Comentários:</label>
+    <br>
+    <textarea id="comentarios" rows="4" placeholder="Escreva algo..."></textarea>
+
+    <button type="submit">Enviar</button>
+
+  </form>
+
+</body>
+</html>
