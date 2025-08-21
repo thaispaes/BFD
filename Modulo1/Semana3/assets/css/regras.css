@@ -50,7 +50,7 @@ body{
 .menu-item a {
     text-decoration: none;
     color: var(--font-color-primary);
-    font-size: 15px;
+    font-size: 13px;
     padding: 1rem;
 }
 
@@ -65,18 +65,38 @@ body{
 
 /* Banner: Cor de fundo ou imagem, centralizar texto, padding interno */
 .banner {
+    background-color: var(--background-secondary);
+    text-align: center;
+    padding: 23%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Título do banner: Cor do texto, tamanho da fonte, peso da fonte */
 .titulo-banner {
+    color: var(--primary-color);
+    font-size: 31px;
+    font-weight: bolder;
 }
 
 /* Subtítulo do banner: Cor do subtítulo, tamanho da fonte, margem inferior */
 .subtitulo-banner {
+    font-size: 13px;
+    color: var(--font-color-secondary);
+    margin-top: 11px;
 }
 
 /* Botão do banner: Cor de fundo, cor do texto, padding, borda arredondada, hover */
 .btn-banner {
+    margin-top: 13px;
+    padding: 11px;
+    width: 97px;
+    color: var(--font-color-primary);
+    background-color: var(--primary-color);
+    text-decoration: none;
+    text-align: center;
 }
 
 /* Seção Sobre: Cor de fundo da seção, padding interno, centralização do texto */
