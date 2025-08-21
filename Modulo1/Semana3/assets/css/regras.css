@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #0077b6;
-    --secondary-color: #0096c7;
-    --primary-color-dark: #023e8a;
-    --primary-color-light: #48cae4;
-    --background-primary: #caf0f8;
-    --background-secondary: #fffbfb;
-    --font-color-primary: #fff;
-    --font-color-secondary: #000;
+  --primary-color: #0077b6;
+  --secondary-color: #0096c7;
+  --primary-color-dark: #023e8a;
+  --primary-color-light: #48cae4;
+  --background-primary: #89c2d9;
+  --background-secondary: #fffbfb;
+  --font-color-primary: #fff;
+  --font-color-secondary: #000;
 }
 
 * {
@@ -15,9 +15,10 @@
   box-sizing: border-box;
 }
 
-body{
-    background-color: var(--background-secondary);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body {
+  background-color: var(--background-secondary);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Header: Defina cor de fundo, padding interno e alinhe o conteúdo horizontalmente */
@@ -34,141 +35,162 @@ body{
 
 /* Logo: Defina cor do texto, destaque da palavra "Site" e tamanho da fonte */
 .logo {
-    color: var(--font-color-primary);
-    font-weight: bolder;
-    font-size: 23px;
-
+  color: var(--font-color-primary);
+  font-weight: bolder;
+  font-size: 23px;
 }
 
 /* Menu de navegação: Organize os itens em linha (horizontal) e espaçamento entre eles */
 .menu-nav ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 /* Item do menu: Cor do texto, dicionar hover com mudança de cor */
 .menu-item a {
-    text-decoration: none;
-    color: var(--font-color-primary);
-    font-size: 13px;
-    padding: 1rem;
+  text-decoration: none;
+  color: var(--font-color-primary);
+  font-size: 13px;
+  padding: 1rem;
 }
 
 .menu-item a:hover {
-    color: var(--primary-color-light);
+  color: var(--primary-color-light);
 }
 
 .menu-item a:active {
-    background-color: var(--primary-color-dark);
-    color: var(--font-color-primary);
+  background-color: var(--primary-color-dark);
+  color: var(--font-color-primary);
 }
 
 /* Banner: Cor de fundo ou imagem, centralizar texto, padding interno */
 .banner {
-    background-color: var(--background-secondary);
-    text-align: center;
-    padding: 23%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: var(--background-secondary);
+  text-align: center;
+  padding: 23%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Título do banner: Cor do texto, tamanho da fonte, peso da fonte */
 .titulo-banner {
-    color: var(--primary-color);
-    font-size: 31px;
-    font-weight: bolder;
+  color: var(--primary-color);
+  font-size: 31px;
+  font-weight: bolder;
 }
 
 /* Subtítulo do banner: Cor do subtítulo, tamanho da fonte, margem inferior */
 .subtitulo-banner {
-    font-size: 15px;
-    color: var(--font-color-secondary);
-    margin-top: 11px;
+  font-size: 15px;
+  color: var(--font-color-secondary);
+  margin-top: 11px;
 }
 
 /* Botão do banner: Cor de fundo, cor do texto, padding, borda arredondada, hover */
 .btn-banner {
-    margin-top: 13px;
-    padding: 11px;
-    width: 97px;
-    color: var(--font-color-primary);
-    background-color: var(--primary-color);
-    text-decoration: none;
-    text-align: center;
+  margin-top: 13px;
+  padding: 11px;
+  width: 97px;
+  color: var(--font-color-primary);
+  background-color: var(--primary-color);
+  text-decoration: none;
+  text-align: center;
 }
 
 /* Seção Sobre: Cor de fundo da seção, padding interno, centralização do texto */
 .sobre {
-    background-color: var(--background-primary);
-    padding: 53px;
-    text-align: center;
+  background-color: var(--background-primary);
+  padding: 53px;
+  text-align: center;
 }
 
 /* Título da seção: Tamanho da fonte, cor e margem inferior */
 .titulo-secao {
-    color: var(--primary-color-dark);
-    font-size: 27px;
-    font-weight: bolder;
-    margin-bottom: 11px;
+  color: var(--primary-color-dark);
+  font-size: 27px;
+  font-weight: bolder;
+  margin-bottom: 11px;
 }
 
 /* Texto da seção Sobre: Tamanho da fonte, cor, line-height e alinhamento */
 .texto-sobre {
-    font-size: 15px;
-    font-weight: lighter;
-    color: var(--font-color-secondary);
+  font-size: 15px;
+  font-weight: lighter;
+  color: var(--font-color-secondary);
 }
 
 /* Seção Serviços: Cor de fundo, padding, centralização */
 .servicos {
-    background-color: var(--background-secondary);
-    padding: 53px;
-    text-align: center;
+  background-color: var(--background-secondary);
+  padding: 53px;
+  text-align: center;
 }
 
 /* Cards: Layout flex, gap entre os cards, alinhamento */
 .cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 51px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 51px;
 }
 
 /* Card: Cor de fundo, padding interno, borda arredondada, sombra */
 .card {
-    padding: 21px;
-    border-radius: 7px;
-    margin-top: 17px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 21px;
+  border-radius: 7px;
+  margin-top: 17px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* Card específico (cores diferentes para cada card) */
 .card-1 {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 .card-2 {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 .card-3 {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 .card-4 {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 /* Galeria: Cor de fundo, padding interno, centralização do título */
 .galeria {
+    background-color: var(--background-secondary);
+    text-align: center;
+}
+
+.galeria h2 {
+    background-color: var(--background-primary);
+    padding: 17px;
 }
 
 /* Grid da galeria: Layout grid, colunas automáticas, gap entre imagens */
 .grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 17px;
+  grid-row-gap: 17px;
+  justify-items: center;
 }
 
 /* Imagem da galeria: Largura 100%, bordas arredondadas */
 .imagem-galeria {
+  height: 250px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+
+.divisor {
+    background-color: var(--background-primary);
+    padding: 17px;
+    margin-top: 21px;
+}
+
 
 /* Depoimentos: Cor de fundo, padding, centralização do conteúdo */
 .depoimentos {
