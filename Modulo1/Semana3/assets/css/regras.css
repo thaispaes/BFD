@@ -83,7 +83,7 @@ body{
 
 /* Subtítulo do banner: Cor do subtítulo, tamanho da fonte, margem inferior */
 .subtitulo-banner {
-    font-size: 13px;
+    font-size: 15px;
     color: var(--font-color-secondary);
     margin-top: 11px;
 }
@@ -101,18 +101,29 @@ body{
 
 /* Seção Sobre: Cor de fundo da seção, padding interno, centralização do texto */
 .sobre {
+    background-color: var(--background-primary);
+    padding: 53px;
+    text-align: center;
 }
 
 /* Título da seção: Tamanho da fonte, cor e margem inferior */
 .titulo-secao {
+    color: var(--primary-color-dark);
+    font-size: 27px;
+    font-weight: bolder;
+    margin-bottom: 11px;
 }
 
 /* Texto da seção Sobre: Tamanho da fonte, cor, line-height e alinhamento */
 .texto-sobre {
+    font-size: 15px;
+    font-weight: lighter;
+    color: var(--font-color-secondary);
 }
 
 /* Seção Serviços: Cor de fundo, padding, centralização */
 .servicos {
+    
 }
 
 /* Cards: Layout flex, gap entre os cards, alinhamento */
