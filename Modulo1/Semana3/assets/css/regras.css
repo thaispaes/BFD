@@ -123,25 +123,39 @@ body{
 
 /* Seção Serviços: Cor de fundo, padding, centralização */
 .servicos {
-    
+    background-color: var(--background-secondary);
+    padding: 53px;
+    text-align: center;
 }
 
 /* Cards: Layout flex, gap entre os cards, alinhamento */
 .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 51px;
 }
 
 /* Card: Cor de fundo, padding interno, borda arredondada, sombra */
 .card {
+    padding: 21px;
+    border-radius: 7px;
+    margin-top: 17px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* Card específico (cores diferentes para cada card) */
 .card-1 {
+    background-color: var(--primary-color);
 }
 .card-2 {
+    background-color: var(--secondary-color);
 }
 .card-3 {
+    background-color: var(--secondary-color);
 }
 .card-4 {
+    background-color: var(--primary-color);
 }
 
 /* Galeria: Cor de fundo, padding interno, centralização do título */
