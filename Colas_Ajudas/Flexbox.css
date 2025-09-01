@@ -1,0 +1,62 @@
+.Teste {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end;
+    flex-direction: row;
+    order: -2;
+    align-content: center;
+}
+
+.Teste2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row-reverse; /* linha reversa */
+    order: -1;
+    align-content: flex-end;
+
+}
+
+.Teste3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    order: 0;
+    flex-wrap: wrap-reverse;
+
+}
+
+.Teste4{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column-reverse; /*coluna reversa */
+    order: 1;
+}
+
+.Teste5{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* Default */
+    order: 2;
+    flex-wrap: wrap;
+}
+
+.Teste6{
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    flex-wrap: nowrap;
+    
+}
+
+/* Justify content -> serve para ajustar/justificar os itens de acordo com o eixo principal horizontalmente (row) ou verticalmente (column)
+align-items -> alinha os items na div de acordo com o eixo transversal verticalmente (row) e horizontalmente (column) ou seja sempre inverso ao justify 
+Flex-direction -> usado para informar se o display flex segue os itens de forma de coluna ou linha
+order: especifica a ordem do item no flex, se é a posição 2 ou 1 por exemplo (vai de -2 a 2) 
+align-self -> funciona como o align-items mas ficado em alinhar o item em especificoe não todos os itens do componente
+flex-wrap-> especifica se os items vão poder quebrar linha ou não
+flex-flow -> junção do flex-wrap com o flex-direction
+align-content -> controla o alinhamento e espaçamento entre as linhas do componente muito usado em rows
+*/
