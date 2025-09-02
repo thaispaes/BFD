@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+  border: 1px solid black;
+}
+
+.container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+  height: 100px;
+}
+
+.c1 {
+  border: 1px solid red;
+}
+
+.c2 {
+  border: 1px solid blue;
+}
+
+.c3 {
+  border: 1px solid green;
+}
+
+.c4 {
+  border: 1px solid yellow;
+}
+
+.c5 {
+  border: 1px solid purple;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5 {
+  padding: 5px;
+  margin: 5px;
+}
