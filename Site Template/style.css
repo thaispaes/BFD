@@ -1,3 +1,13 @@
+:root {
+    --main-color: #330708;
+    --secondary-color: #91311b;
+    --orange-color: #e87624;
+    --orange-secondary-color: #e8a726;
+    --border-colors: #f5b97d;
+    --background-color: #f8f9fa;
+    --text-color: #212529;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,14 +20,20 @@ body {
 
 
 /* Tela de Computador ou Desktop*/
-@media (max-width: 1024px) {
+@media (max-width: 1850px) {
 
     header {
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        padding: 10px;
+        
+
+        .header-title {
+            color: var(--orange-color);
+        }
 
         nav {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
 
         }
@@ -32,18 +48,35 @@ body {
                 text-decoration: none;
                 color: black;
             }
+
+            a:hover {
+                color: var(--orange-color);
+
+            }
         }
 
         .exit {
             display: flex;
+            flex-direction: row-reverse;
         }
 
+        .header-exit {
+            text-decoration: none;
+            color: black;
+        }
 
+        .header-exit:hover {
+            color: var(--orange-color);
+        }
 
         .icon {
-            width: 20px;
-            height: 20px;
+            width: 15px;
+            height: 15px;
             margin: 0 5px;
+        }
+
+        .icon:hover {
+            filter: invert(39%) sepia(83%) saturate(749%) hue-rotate(340deg) brightness(95%) contrast(89%);
         }
     }
 
@@ -86,6 +119,53 @@ body {
         border-radius: 10px;
     }
 
+    .container3 {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .container3-title{
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .container3-article{
+            width: 100%;
+            margin-bottom: 20px;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+
+        }
+
+        .container3-content {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            width: 100%;
+        }
+        
+        .container3-paragraph {
+            border: solid 2px var(--border-colors);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            color: white;
+            background-color: var(--orange-color);
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+        }
+    }
+
+    
+
+    
+    
 }
 
 /* Tela de Tablet*/
