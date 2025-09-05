@@ -313,10 +313,11 @@ body {
 
 /* Tela de Tablet*/
 @media (max-width: 768px) {
+  
 }
 
 /* Tela de Celular ou Smartphone*/
-@media (max-width: 360px) {
+@media (min-width: 360px) and (max-width: 480px) {
   header {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
       rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
@@ -325,24 +326,16 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
     }
 
     .header-title {
-      font-size: 15px;
+      font-size: 25px;
     }
 
     ul {
-      display: flex;
-      list-style: none;
-
-      text-align: center;
-
-      a {
-        text-decoration: none;
-        color: black;
-        font-size: 7px;
-        align-items: center;
-      }
+      display: none;
+      
     }
 
     .exit {
@@ -351,12 +344,12 @@ body {
     }
 
     .header-exit {
-      font-size: 10px;
+      font-size: 15px;
     }
 
     .icon {
-      width: 10px;
-      height: 10px;
+      width: 15px;
+      height: 15px;
       margin: 0 5px;
     }
   }
@@ -372,29 +365,125 @@ body {
   .container1 {
     width: 100%;
     display: flex;
+    flex-direction: column;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
       rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
     border-radius: 10px;
-    margin-bottom: 5px;
-  }
+    margin-bottom: 10px;
+    padding: 10px;
 
-  .container1-title {
-    font-size: 30px;
-    text-align: center;
-  }
+    .container1-title {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
 
-  .container1-info {
-    display: flex;
-    justify-content: space-between;
+    .container1-info {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .container2 {
     width: 100%;
+
+    .container2-img {
+      width: 98%;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+      border-radius: 10px;
+    }
   }
 
-  .container2-img {
-    width: 98%;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
-    border-radius: 10px;
+  .container3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+    .container3-content {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      gap: 10px;
+    }
+
+    .container3-paragraph {
+      width: 100%;
+      font-size: 15px;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+  }
+  .container4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    .container4-article {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      gap: 10px;
+    }
+
+    .first-service,
+    .second-service {
+      width: 100%;
+    }
+
+    .container4-img {
+      width: 90%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  }
+
+  .container5 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    .container5-article {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      gap: 20px;
+    }
+
+    .container5-content {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .container5-img {
+      width: 90%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .first-case,
+    .second-case {
+      width: 100%;
+    }
+  }
+
+  .container6 {
+    width: 100%;
+
+    .container6-form {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .btn {
+      width: 50%;
+    }
   }
 }
