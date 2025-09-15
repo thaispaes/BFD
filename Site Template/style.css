@@ -580,5 +580,97 @@ body {
       box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
       border-radius: 10px;
     }
+  }
 
+  .container3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+    .container3-content {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      gap: 10px;
+    }
+
+    .container3-paragraph {
+      width: 100%;
+      font-size: 15px;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+  }
+  .container4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    .container4-article {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      gap: 10px;
+    }
+
+    .first-service,
+    .second-service {
+      width: 100%;
+    }
+
+    .container4-img {
+      width: 90%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  }
+
+  .container5 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    .container5-article {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      gap: 20px;
+    }
+
+    .container5-content {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .container5-img {
+      width: 90%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .first-case,
+    .second-case {
+      width: 100%;
+    }
+  }
+
+  .container6 {
+    width: 100%;
+
+    .container6-form {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .btn {
+      width: 50%;
+    }
+  }
 }
